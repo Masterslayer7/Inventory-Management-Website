@@ -1,4 +1,5 @@
 <?php
+// Yug Patel, 10/4/2024, IT202-001,  Phase 1 Assignment: Login and Logout, yp325@njit.edu
 function getDB() {
     // Credentials
    $host = 'sql1.njit.edu';

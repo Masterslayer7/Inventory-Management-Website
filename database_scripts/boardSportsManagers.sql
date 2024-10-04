@@ -1,3 +1,4 @@
+# Yug Patel, 10/4/2024, IT202-001,  Phase 1 Assignment: Login and Logout, yp325@njit.edu
 CREATE TABLE boardSportsManagers (
 boardSportsManagerID     INT(11)        NOT NULL   AUTO_INCREMENT,
 emailAddress           VARCHAR(255)   NOT NULL   UNIQUE,
