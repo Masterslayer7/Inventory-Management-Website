@@ -23,7 +23,7 @@ if ($fetched && isset($name)) {
    header("Location: index.php");
    exit;
 } else {
-   echo "<h2>Sorry, login incorrect</h2>\n";
+   echo "<h2>Sorry, login incorrect, Cannot login to Board Sports</h2>\n";
    echo "<a href=\"index.php\">Please try again</a>\n";
 }
 ?>
