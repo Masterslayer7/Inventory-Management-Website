@@ -1,0 +1,27 @@
+# Yug Patel, 10/18/2024, IT202-001,  Phase 2 Assignment: CRUD Categories and Products, yp325@njit.edu
+
+Create Category
+
+http://localhost:3000/addboardsportscategory.test.php?BoardCategoryID=300&BoardCategoryCode=RG&BoardCategoryName=RashGaurd&BoardCategoryAisleNumber=3
+
+Verify Create Category
+
+http://localhost:3000/listboardsportscategories.test.php
+
+
+Update Category
+
+http://localhost:3000/changeboardsportscategory.test.php?BoardCategoryID=300&BoardCategoryCode=RAG&BoardCategoryName=RashGaurds&BoardCategoryAisleNumber=3
+
+Verify Update Category
+
+http://localhost:3000/listboardsportscategories.test.php
+
+
+Delete Category
+
+http://localhost:3000/removeboardsportscategory.test.php?BoardCategoryID=300
+
+Verify Delete Category
+
+http://localhost:3000/listboardsportscategories.test.php

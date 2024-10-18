@@ -1,0 +1,27 @@
+
+# Yug Patel, 10/18/2024, IT202-001,  Phase 2 Assignment: CRUD Categories and Products, yp325@njit.edu
+Create Product
+
+http://localhost:3000/addbsaproduct.test.php?BSAProductID=3000&BSAProductCode=KRG&BSAProductName=KukaburaRashGaurd&BSADescription=KukaburarashguardsForanysport&&BSACategoryID=300&BSAWholesalePrice=10.00&BSAListPrice=15.00&BSASize=S
+
+Verify Create Product
+
+http://localhost:3000/listbsaproducts.test.php
+
+
+Update Product
+
+http://localhost:3000/changebsaproduct.test.php?BSAProductID=3000&BSAProductCode=KURG&BSAProductName=KukaburaRashGaurd&BSADescription=KukaburarashguardsForanysport&&BSACategoryID=300&BSAWholesalePrice=10.00&BSAListPrice=15.00&BSASize=S
+
+Verify Update Product
+
+http://localhost:3000/listbsaproducts.test.php
+
+
+Delete Product
+
+http://localhost:3000/removebsaproduct.test.php?BSAProductID=3000
+
+Verify Delete Product
+
+http://localhost:3000/listbsaproducts.test.php

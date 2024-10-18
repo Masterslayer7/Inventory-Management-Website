@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 10/4/2024, IT202-001,  Phase 1 Assignment: Login and Logout, yp325@njit.edu
+// Yug Patel, 10/18/2024, IT202-001,  Phase 2 Assignment: CRUD Categories and Products, yp325@njit.edu
 require_once('database.php');
 $emailAddress = $_POST['emailAddress'];
 $password = $_POST['password'];
@@ -24,7 +24,7 @@ if ($fetched && isset($name)) {
    header("Location: index.php");
    exit;
 } else {
-   echo "<h2>Sorry, login incorrect, Cannot login to Board Sports</h2>\n";
+   echo "<h2>Sorry, login incorrect</h2>\n";
    echo "<a href=\"index.php\">Please try again</a>\n";
 }
 ?>
