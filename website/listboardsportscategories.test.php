@@ -9,8 +9,7 @@ foreach($categories as $category) {
    $BoardCategoryAisleNumber = $category->BoardCategoryAisleNumber;
    $name =  "<strong>BoardCategoryID:</strong> $BoardCategoryID<br>" .
             "<strong>BoardCategoryCode:</strong> $BoardCategoryCode<br>" .
-            "<strong>BoardCategoryName:</strong> $BoardCategoryName<br>" .
-            "<strong>BoardCategoryAisleNumber:</strong> $BoardCategoryAisleNumber<br>";
+            "<strong>BoardCategoryName:</strong> $BoardCategoryName<br>";
    echo "$name<br>";
 }
 ?>

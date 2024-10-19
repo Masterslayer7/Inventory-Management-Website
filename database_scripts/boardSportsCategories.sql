@@ -16,3 +16,5 @@ INSERT INTO BoardSportsCategories
 (BoardCategoryID, BoardCategoryCode, BoardCategoryName, BoardCategoryAisleNumber, DateCreated)
 VALUES
 (200, 'SKBS', 'Skateboarding shoes', 2, NOW());
+
+SELECT * from BoardSportsCategories

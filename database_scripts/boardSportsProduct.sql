@@ -15,9 +15,10 @@ PRIMARY KEY ( BSAProductID )
 INSERT INTO BSAProducts
 (BSAProductID, BSAProductCode, BSAProductName, BSADescription, BSACategoryID, BSAWholesalePrice, BSAListPrice, BSASize, DateCreated)
 VALUES
-(1000, 'WTS', 'Wetsuit', 'Its for when your in Water!', 100, 15.00, 39.99, 'L', NOW());
+(1000, 'NWTS', 'Neo Wetsuit', 'A neoprene suit designed to provide thermal insulation and protect the wearer in cold water environments for sports like surfing and diving.', 100, 100.00, 199.99, 'L', NOW());
 INSERT INTO BSAProducts
 (BSAProductID, BSAProductCode, BSAProductName, BSADescription, BSACategoryID, BSAWholesalePrice, BSAListPrice, BSASize, DateCreated)
 VALUES
-(2000, 'SKBS', 'Skateboarding shoes', 'Shoes for skateboarding!', 200, 60.00, 120.00, 'L', NOW());
+(2000, 'DSKS', 'Dura Skateboarding shoes', 'Durable shoes with flat soles and enhanced grip, specifically designed to provide stability and protection during skateboarding.', 200, 30.00, 100.00, 'L', NOW());
 
+SELECT * FROM BSAProducts
