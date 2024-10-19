@@ -17,4 +17,19 @@ INSERT INTO BoardSportsCategories
 VALUES
 (200, 'SKBS', 'Skateboarding shoes', 2, NOW());
 
+INSERT INTO BoardSportsCategories
+(BoardCategoryID, BoardCategoryCode, BoardCategoryName, BoardCategoryAisleNumber, DateCreated)
+VALUES
+(300, 'RG', 'Rash Guard', 3, NOW());
+
+INSERT INTO BoardSportsCategories
+(BoardCategoryID, BoardCategoryCode, BoardCategoryName, BoardCategoryAisleNumber, DateCreated)
+VALUES
+(400, 'SNBP', 'Snowboarding pants', 4, NOW());
+
+INSERT INTO BoardSportsCategories
+(BoardCategoryID, BoardCategoryCode, BoardCategoryName, BoardCategoryAisleNumber, DateCreated)
+VALUES
+(500, 'MTBH', 'Mountain Biking helmet', 5, NOW());
+
 SELECT * from BoardSportsCategories
