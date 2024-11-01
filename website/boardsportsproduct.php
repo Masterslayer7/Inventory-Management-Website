@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 10/18/2024, IT202-001,  Phase 2 Assignment: CRUD Categories and Products, yp325@njit.edu
+// Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu
 require_once('database.php');
 class Product
 {
@@ -74,7 +74,7 @@ class Product
            $products = array();
            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
                 $product = new Product(
-                    $row['BSAProductCode'],
+                    $row['BSAProductID'],
                     $row['BSAProductCode'],
                     $row['BSAProductName'],
                     $row['BSADescription'],

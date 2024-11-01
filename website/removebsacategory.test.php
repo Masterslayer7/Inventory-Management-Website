@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 10/18/2024, IT202-001,  Phase 2 Assignment: CRUD Categories and Products, yp325@njit.edu
+// Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu
 error_log("\$_GET " . print_r($_GET, true));
 include("boardsportscategory.php");
 $BoardCategoryID = $_GET['BoardCategoryID'];
