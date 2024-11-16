@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu
+// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
 if (!isset($_POST['BSAProductID']) or (!is_numeric($_POST['BSAProductID']))) {
 ?>
    <h2>You did not select a valid BSAProductID value</h2>
@@ -19,31 +19,31 @@ if (!isset($_POST['BSAProductID']) or (!is_numeric($_POST['BSAProductID']))) {
                 </tr>
                 <tr>
                     <td>BSAProductCode</td>
-                    <td><input type="text" name="BSAProductCode" value="<?php echo $product->BSAProductCode; ?>"></td>
+                    <td><input type="text" name="BSAProductCode" value="<?php echo $product->BSAProductCode; ?>" minlength="3" maxlength="10" required ></td>
                 </tr>
                 <tr>
                     <td>BSAProductName</td>
-                    <td><input type="text" name="BSAProductName" value="<?php echo $product->BSAProductName; ?>"></td>
+                    <td><input type="text" name="BSAProductName" value="<?php echo $product->BSAProductName; ?>" minlength="3" maxlength="100" required></td>
                 </tr>
                 <tr>
                     <td>BSADescription</td>
-                    <td><input type="text" name="BSADescription" value="<?php echo $product->BSADescription; ?>"></td>
+                    <td><input type="text" name="BSADescription" value="<?php echo $product->BSADescription; ?>" minlength="10" maxlength="255" required></td>
                 </tr>
                 <tr>
                     <td>BSACategoryID</td>
-                    <td><input type="text" name="BSACategoryID" value="<?php echo $product->BSACategoryID; ?>"></td>
+                    <td><input type="number" name="BSACategoryID" value="<?php echo $product->BSACategoryID; ?>" min="100" max="999" required></td>
                 </tr>
                 <tr>
                     <td>BSAWholesalePrice</td>
-                    <td><input type="text" name="BSAWholesalePrice" value="<?php echo $product->BSAWholesalePrice; ?>"></td>
+                    <td><input type="number" name="BSAWholesalePrice" value="<?php echo $product->BSAWholesalePrice; ?>" step="0.01" min="1" max="1000000" required></td>
                 </tr>
                 <tr>
                     <td>BSAListPrice</td>
-                    <td><input type="text" name="BSAListPrice" value="<?php echo $product->BSAListPrice; ?>"></td>
+                    <td><input type="number" name="BSAListPrice" value="<?php echo $product->BSAListPrice; ?>" step="0.01" min="1" max="1000000" required></td>
                 </tr>
                 <tr>
                     <td>BSASize</td>
-                <td><input type="text" name="BSASize" value="<?php echo $product->BSASize; ?>"></td>
+                <td><input type="text" name="BSASize" value="<?php echo $product->BSASize; ?>" minlength="1" maxlength="10" required></td>
                 </tr>
            </table><br><br>
            <input type="submit" name="answer" value="Update Product">

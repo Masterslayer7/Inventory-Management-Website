@@ -1,4 +1,5 @@
-<!-- // Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu -->
+<!-- Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu -->
+
 <table width="100%" cellpadding="3">
    <?php
    if (!isset($_SESSION['login'])) {
@@ -10,10 +11,12 @@
        </tr>
    <?php
    } else {
-       echo "<td><h3>Welcome, {$_SESSION['login']}</h3></td>\n";
+       echo "<td><h3>Welcome, {$_SESSION['firstName']} {$_SESSION['lastName']}</h3></td>\n";
    ?>
        <tr>
-           <td><a href="index.php"><strong>Home</strong></a></td>
+           <td><img src="images/home.png" alt="Home Icon" width="12" height="12">&nbsp;
+            <a href="index.php"><strong>Home</strong></a>
+        </td>
        </tr>
        <tr>
            <td><strong>Categories</strong></td>

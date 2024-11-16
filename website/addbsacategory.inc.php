@@ -1,14 +1,14 @@
 <?php
-// Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu
+// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
 // include("category.php");
 if (isset($_SESSION['login'])) {
-  $BoardCategoryID = $_POST['BoardCategoryID'];
-  if ((trim($BoardCategoryID) == '') or (!is_numeric($BoardCategoryID))) {
+  $BoardCategoryID = filter_input(INPUT_POST, 'BoardCategoryID', FILTER_VALIDATE_INT);
+  if ((trim($BoardCategoryID) == '') or (!is_int($BoardCategoryID))) {
     echo "<h2>Sorry, you must enter a valid category ID number</h2>\n";
   } else {
-    $BoardCategoryCode = $_POST['BoardCategoryCode'];
-    $BoardCategoryName = $_POST['BoardCategoryName'];
-    $BoardCategoryAisleNumber = $_POST['BoardCategoryAisleNumber'];
+    $BoardCategoryCode = htmlspecialchars($_POST['BoardCategoryCode']);
+    $BoardCategoryName = htmlspecialchars($_POST['BoardCategoryName']);
+    $BoardCategoryAisleNumber = htmlspecialchars($_POST['BoardCategoryAisleNumber']);
     $category = new Category($BoardCategoryID, $BoardCategoryCode, $BoardCategoryName, $BoardCategoryAisleNumber, date("Y-m-d H:i:s"));
     $result = $category->saveCategory();
     if ($result) {

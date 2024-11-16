@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 11/1/2024, IT202-001,  Phase 3 Assignment: HTML Website Layout, yp325@njit.edu
+// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
 if (!isset($_POST['BoardCategoryID']) or (!is_numeric($_POST['BoardCategoryID']))) {
 ?>
    <h2>You did not select a valid BoardCategoryID to view.</h2>

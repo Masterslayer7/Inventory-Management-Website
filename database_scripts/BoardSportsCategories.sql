@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: sql1.njit.edu
--- Generation Time: Nov 01, 2024 at 08:56 PM
+-- Generation Time: Nov 16, 2024 at 03:31 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -44,6 +44,7 @@ INSERT INTO `BoardSportsCategories` (`BoardCategoryID`, `BoardCategoryCode`, `Bo
 (300, 'RG', 'Rash Guard', 3, '2024-10-18 21:07:12'),
 (400, 'SNBP', 'Snowboarding pants', 4, '2024-10-18 21:07:13'),
 (500, 'MTBH', 'Mountain Biking helmet', 5, '2024-10-18 21:07:14'),
+(998, 'TES1T', 'as', 1, '2024-11-15 21:50:53'),
 (999, 'TEST', 'testing New category', 99, '2024-11-01 16:33:50');
 
 --

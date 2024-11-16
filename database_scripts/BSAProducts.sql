@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: sql1.njit.edu
--- Generation Time: Oct 19, 2024 at 01:56 AM
+-- Generation Time: Nov 16, 2024 at 03:30 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `BSAProducts` (
 --
 
 INSERT INTO `BSAProducts` (`BSAProductID`, `BSAProductCode`, `BSAProductName`, `BSADescription`, `BSACategoryID`, `BSAWholesalePrice`, `BSAListPrice`, `BSASize`, `DateCreated`) VALUES
-(1001, 'PWTS', 'Premium Neo Wetsuit', 'This high-performance neoprene wetsuit offers enhanced flexibility and warmth. Great for sports like competitive surfing and diving.', 100, 120.00, 249.99, 'M', '2024-10-18 21:33:37'),
+(1001, 'PWTS', 'Premium Neo Wetsuit', 'This high-performance neoprene wetsuit offers enhanced flexibility and warmth. Great for sports like competitive surfing and diving.', 100, 150.00, 299.99, 'L', '2024-10-18 21:33:37'),
 (1002, 'SWTS', 'Standard Neo Wetsuit', 'A versatile neoprene wetsuit suitable for recreational surfing and other water activities. This suit provides excellent thermal insulation and comfort.', 100, 90.00, 199.99, 'L', '2024-10-18 21:33:37'),
 (1003, 'KWTS', 'Kids Neo Wetsuit', 'Designed for young surfers who are eager to get wet. This flexible neoprene wetsuit ensures comfort and warmth while learning to ride the waves.', 100, 70.00, 149.99, 'S', '2024-10-18 21:33:37'),
 (2001, 'PSKTS', 'Pro Skate Shoes', 'These high-top skate shoes feature reinforced stitching and a padded collar for ultimate support during tricks. Best for olympic level Athletes and proffesionals.', 101, 40.00, 89.99, '10', '2024-10-18 21:33:38'),
@@ -57,7 +57,9 @@ INSERT INTO `BSAProducts` (`BSAProductID`, `BSAProductCode`, `BSAProductName`, `
 (4003, 'YSBP', 'Youth Snowboard Pants', 'Stylish and functional, these youth snowboard pants provide warmth and comfort for young riders. With a focus on durability and protection, they are perfect for kids who love to hit the slopes.', 103, 40.00, 89.99, 'S', '2024-10-18 21:33:39'),
 (5001, 'FMBH', 'Full Face Mountain Biking Helmet', 'Offering maximum protection and ventilation, this full face helmet is designed for aggressive downhill riding. It ensures you stay safe and comfortable while tackling challenging trails.', 104, 70.00, 149.99, 'L', '2024-10-18 21:33:40'),
 (5002, 'HMBH', 'Half Shell Mountain Biking Helmet', 'Lightweight and breathable, this half shell helmet is ideal for cross-country biking. It provides essential protection without sacrificing comfort, making it a great choice for long rides.', 104, 30.00, 69.99, 'M', '2024-10-18 21:33:40'),
-(5003, 'YMBH', 'Youth Mountain Biking Helmet', 'Designed for safety and comfort, this youth helmet features fun designs that appeal to young mountain bikers. It combines protection with style, ensuring kids can ride safely and confidently.', 104, 25.00, 49.99, 'S', '2024-10-18 21:33:40');
+(5003, 'YMBH', 'Youth Mountain Biking Helmet', 'Designed for safety and comfort, this youth helmet features fun designs that appeal to young mountain bikers. It combines protection with style, ensuring kids can ride safely and confidently.', 104, 25.00, 49.99, 'S', '2024-10-18 21:33:40'),
+(9998, 'TESTing', 'Testingasdasd', 'Testing new product input asdasd', 999, 99.99, 99.00, 'L', '2024-11-15 22:05:42'),
+(9999, 'TEST', 'Testing', 'Testing new product input ', 999, 10.88, 9.99, 'L', '2024-11-01 16:36:23');
 
 --
 -- Indexes for dumped tables
