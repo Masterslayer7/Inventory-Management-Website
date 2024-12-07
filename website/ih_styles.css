@@ -1,4 +1,4 @@
-/* Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu */
+/* // Yug Patel, 12/6/2024, IT202-001,  Phase 5 Assignment: Javascript, yp325@njit.edu */
 body {
     font-family: Geneva, Tahoma, sans-serif;
     font-size: 80%;
@@ -60,6 +60,7 @@ main {
     /* float: left; */
     width: 55%;
     height: 100%;
+    overflow-y: auto;
 }
 
 main table {
@@ -73,6 +74,8 @@ main td {
 
 
 nav {
+    position: relative;
+    margin: 10px;
     padding: 5px;
     border-bottom: 1px solid #F3F6FA;
     border-top: 1px solid #F3F6FA;
@@ -80,6 +83,9 @@ nav {
     background-color: #82A3C9;
     width: 20%;
     border-radius: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
 }
 
 a {

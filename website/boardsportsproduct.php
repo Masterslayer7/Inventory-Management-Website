@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
+// Yug Patel, 12/6/2024, IT202-001,  Phase 5 Assignment: Javascript, yp325@njit.edu
 require_once('database.php');
 class Product
 {
@@ -101,7 +101,7 @@ class Product
        $row = $result->fetch_array(MYSQLI_ASSOC);
        if ($row) {
             $product = new Product(
-                $row['BSAProductCode'],
+                $row['BSAProductID'],
                 $row['BSAProductCode'],
                 $row['BSAProductName'],
                 $row['BSADescription'],
@@ -143,10 +143,46 @@ class Product
    function removeProduct()
    {
        $db = getDB();
-       $query = "DELETE FROM BSAProducts WHERE BSACategoryID = $this->BSACategoryID";
+       $query = "DELETE FROM BSAProducts WHERE BSAProductID = $this->BSAProductID";
        $result = $db->query($query);
        $db->close();
        return $result;
    }
+    static function getTotalProducts()
+    {
+        $db = getDB();
+        $query = "SELECT count(BSAProductID) FROM BSAProducts";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        if ($row) {
+            return $row[0];
+        } else {
+            return NULL;
+        }
+    }
+    static function getTotalListPrice()
+    {
+        $db = getDB();
+        $query = "SELECT sum(BSAListPrice) FROM BSAProducts";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        if ($row) {
+            return $row[0];
+        } else {
+            return NULL;
+        }
+    } 
+    static function getTotalWholesalePrice()
+    {
+        $db = getDB();
+        $query = "SELECT sum(BSAWholesalePrice) FROM BSAProducts";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        if ($row) {
+            return $row[0];
+        } else {
+            return NULL;
+        }
+    } 
 }
 ?>

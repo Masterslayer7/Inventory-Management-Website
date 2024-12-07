@@ -20,7 +20,7 @@
   }
 </style>
 <?php
-// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
+// Yug Patel, 12/6/2024, IT202-001,  Phase 5 Assignment: Javascript, yp325@njit.edu
 if (!isset($_SESSION['login'])) {
 ?>
   <h2>Please Login to the Board Sports Inventory Website</h2><br>
@@ -38,7 +38,7 @@ if (!isset($_SESSION['login'])) {
   </form>
 <?php
 } else {
-  echo "<h2>Welcome to Board Sports Inventory Helper, {$_SESSION['firstName']} {$_SESSION['lastName']} ({$_SESSION['pronouns']})</h2>";
+  echo "<h2>Welcome to Board Sports Inventory Helper, {$_SESSION['firstName']} {$_SESSION['lastName']} ({$_SESSION['pronouns']}), {$_SESSION['emailAddress']}</h2>";
 ?>
   <br><br>
   <p>This program tracks category and item inventory</p>

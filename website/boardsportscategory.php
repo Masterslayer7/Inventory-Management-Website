@@ -1,5 +1,5 @@
 <?php
-// Yug Patel, 11/15/2024, IT202-001,  Phase 4 Assignment: Input filtering and CSS Styling, yp325@njit.edu
+// Yug Patel, 12/6/2024, IT202-001,  Phase 5 Assignment: Javascript, yp325@njit.edu
 require_once('database.php');
 class Category
 {
@@ -113,5 +113,18 @@ class Category
        $db->close();
        return $result;
    }
+   static function getTotalCategories()
+    {
+        $db = getDB();
+        $query = "SELECT count(BoardCategoryID) FROM BoardSportsCategories";
+        $result = $db->query($query);
+        $row = $result->fetch_array();
+        if ($row) {
+            return $row[0];
+        } else {
+            return NULL;
+        }
+    }
+
 
 }
