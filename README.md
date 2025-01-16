@@ -1,4 +1,4 @@
-# Product Management Website
+# Inventory Management Website
 
 This website helps a business keep track of the product inventory. The website currently uses an example of a board sports apparel store and has features such as adding, removing, and editing products and categories in the store. 
 The website was created with PHP, HTML, CSS, and JavaScript, and the database was created and managed using MySQL. 
