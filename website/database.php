@@ -5,7 +5,7 @@ function getDB() {
    $port = 3306;
    $dbname = 'yp325';
    $username = 'yp325';
-   $password = 'Njit123456&';
+   $password = '...';
    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
    try {
        $db = new mysqli($host, $username, $password, $dbname, $port);
